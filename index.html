@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toolify - Free PDF & Image Tools</title>
+  <style>
+    :root {
+      --primary: #4a90e2;
+      --dark: #222;
+      --light: #f7f7f7;
+      --text: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: var(--dark);
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: var(--primary);
+    }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: url('https://via.placeholder.com/1600x400') center/cover no-repeat;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .tools-section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .tools-section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .tool-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .tool-card img {
+      max-width: 60px;
+      margin-bottom: 15px;
+    }
+
+    .tool-card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .tool-card p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: var(--primary);
+      color: white;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .cta button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: white;
+      color: var(--primary);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+
+      .cta h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Toolify</h1>
+    <p>Your one-stop hub for PDF & image tools</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">PDF Tools</a>
+    <a href="#">Image Tools</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Fast, Free & Easy</h2>
+    <p>Convert, compress, edit, and manage your files all in one place</p>
+  </section>
+
+  <section class="tools-section">
+    <h3>PDF Tools</h3>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <img src="https://via.placeholder.com/60" alt="PDF Merge" />
+        <h4>Merge PDFs</h4>
+        <p>Combine multiple PDF files into one easily.</p>
+      </div>
+      <div class="tool-card">
+        <img src="https://via.placeholder.com/60" alt="PDF Split" />
+        <h4>Split PDFs</h4>
+        <p>Split a large PDF into individual files.</p>
+      </div>
+      <div class="tool-card">
+        <img src="https://via.placeholder.com/60" alt="Compress PDF" />
+        <h4>Compress PDF</h4>
+        <p>Reduce PDF file size without losing quality.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tools-section">
+    <h3>Image Tools</h3>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <img src="https://via.placeholder.com/60" alt="Image Converter" />
+        <h4>Convert Images</h4>
+        <p>Convert images between PNG, JPG, and WebP formats.</p>
+      </div>
+      <div class="tool-card">
+        <img src="https://via.placeholder.com/60" alt="Resize Image" />
+        <h4>Resize Images</h4>
+        <p>Quickly resize your images to custom dimensions.</p>
+      </div>
+      <a href="/tool/img-compress.html" class="tool-card" style="text-decoration: none; color: inherit;">
+  <img src="https://via.placeholder.com/60" alt="Compress Image" />
+  <h4>Compress Images</h4>
+  <p>Make image files smaller without sacrificing quality.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Start Using Our Tools Now</h2>
+    <button>Explore Tools</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Toolify. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
